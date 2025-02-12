@@ -38,14 +38,14 @@ Below, I will describe the function and neccessary data/shapefile components for
       - GSHHS_i_L1.shx
       - CMinorIsotopeData.xlsx
   - Description of Code
-      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Calculations are performed by combining all the coastline shapefiles into a single polygon shapefile and then calculating distance of points to the nearest edge of the polygon. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance.xlsx).
+      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance.xlsx).
 2. 2_CONIIsotope_SampleMap_v1.R
   - Required Data Sheet
       - LocalitiesDataForMap.xlsx
   - Description of Code
-      - This script includes the code for the production of a sample map (Figure 1 in our publication). We use a cleaned excel sheet (LocalitiesDataForMap.xlsx) with standardized coordinates to import our coordinate data. Coordinates were standardized for a locality if several samples were collected from said location to minimize plotting noise in our map. 
+      - This script includes the code for the production of a sample map (Figure 1 in our publication). We use a cleaned excel sheet (LocalitiesDataForMap.xlsx) with standardized coordinates. For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
 3. 3_CONIIsotope_StatisticalTestsAndFigure_v1.R
   - Required Data Sheet
       - CMinorIsotopeData_withCoastlineDistance.xlsx
   - Description of Code
-      - This script includes the code for all statistical analyses ran to analyze temporal and spatial trends in stable isotopes: Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce Figure 2 in our publication: multigrid scatterplots.
+      - This script includes the code for all temporal and spatial analyses of stable isotopes: Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce Figure 2 in our publication.
