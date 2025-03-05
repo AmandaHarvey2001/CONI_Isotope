@@ -11,11 +11,11 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 94 feath
 |    |- <ins>Data</ins> <br />
 |    |    |- CMinorIsotopeData.xlsx <br />
 |    |    |- CMinorIsotopeData_withCoastlineDistance.xlsx <br />
-|    |    |- LocalitiesDataForMap.xlsx <br />
+|    |    |- LocalitiesDataForMap_V2.xlsx <br />
 |    |- <ins>Scripts</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v1.R <br />
-|    |    |- 2_CONIIsotope_SampleMap_v1.R <br />
-|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v1.R <br />
+|    |    |- 2_CONIIsotope_SampleMap_v2.R <br />
+|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v2.R <br />
 |    |- <ins>Shapefiles</ins> <br />
 |    |    |- GSHHS_i_L1.dbf <br />
 |    |    |- GSHHS_i_L1.prj <br />
@@ -39,12 +39,12 @@ Below, I will describe the function and neccessary data/shapefile components for
       - CMinorIsotopeData.xlsx
   - Description of Code
       - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance.xlsx).
-2. 2_CONIIsotope_SampleMap_v1.R
+2. 2_CONIIsotope_SampleMap_v2.R
   - Required Data Sheet
-      - LocalitiesDataForMap.xlsx
+      - LocalitiesDataForMap_V2.xlsx
   - Description of Code
       - This script includes the code for the production of a sample map (Figure 1 in our publication). We use a cleaned excel sheet (LocalitiesDataForMap.xlsx) with standardized coordinates. For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
-3. 3_CONIIsotope_StatisticalTestsAndFigure_v1.R
+3. 3_CONIIsotope_StatisticalTestsAndFigure_v2.R
   - Required Data Sheet
       - CMinorIsotopeData_withCoastlineDistance.xlsx
   - Description of Code
