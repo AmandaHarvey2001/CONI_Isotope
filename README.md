@@ -12,6 +12,13 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 94 feath
 |    |    |- CMinorIsotopeData.xlsx <br />
 |    |    |- CMinorIsotopeData_withCoastlineDistance.xlsx <br />
 |    |    |- LocalitiesDataForMap_V2.xlsx <br />
+|    |    |- PrecipitationData
+|    |    |    |- PRISM_ppt_CalcasieuPar_1940.csv
+|    |    |    |- PRISM_ppt_CameronCo_1991.csv
+|    |    |    |- PRISM_ppt_CameronPar_1936_2022.csv
+|    |    |    |- PRISM_ppt_JeffersonPar_1936_1993.csv
+|    |    |    |- PRISM_ppt_LafourchePar_1991.csv
+|    |    |    |- PRISM_ppt_OrleansPar_1992.csv
 |    |- <ins>Scripts</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v1.R <br />
 |    |    |- 2_CONIIsotope_SampleMap_v2.R <br />
@@ -25,7 +32,7 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 94 feath
 ## Instructions for Use
 
 ### Description of Directory Contents 
-Within the CONI_Isotope Directory are 3 subdirectories containing their respective files for data analysis: Data, Scripts, and Shapefiles. Shapefiles have been sourced from the [_Global Self-consistent, Hierarchical, High-resolution Geography Database_](https://www.ngdc.noaa.gov/mgg/shorelines/) avaliable through the National Center for Environmental Information. Note, an API for Stadia Maps is neccessary for SampleMap.R script and can be obtained at https://stadiamaps.com/.
+Within the CONI_Isotope Directory are 3 subdirectories containing their respective files for data analysis: Data, Scripts, and Shapefiles. Precipitation Data from Shapefiles have been sourced from the [ Northwest Alliance for Computational Science & Engineering at Oregon State University PRISM Weather Data Set](https://prism.oregonstate.edu/). Shapefiles were avaliable through the National Center for Environmental Information's [_Global Self-consistent, Hierarchical, High-resolution Geography Database_](https://www.ngdc.noaa.gov/mgg/shorelines/).
 
 Below, I will describe the function and neccessary data/shapefile components for each R code file in the Scripts subdirectory. Numbers at the beginning of script names represent the recommended order of execution. 
 
@@ -38,7 +45,7 @@ Below, I will describe the function and neccessary data/shapefile components for
       - GSHHS_i_L1.shx
       - CMinorIsotopeData.xlsx
   - Description of Code
-      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance.xlsx).
+      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance_v2.xlsx).
 2. 2_CONIIsotope_SampleMap_v2.R
   - Required Data Sheet
       - LocalitiesDataForMap_V2.xlsx
@@ -46,6 +53,12 @@ Below, I will describe the function and neccessary data/shapefile components for
       - This script includes the code for the production of a sample map (Figure 1 in our publication). We use a cleaned excel sheet (LocalitiesDataForMap.xlsx) with standardized coordinates. For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
 3. 3_CONIIsotope_StatisticalTestsAndFigure_v3.R
   - Required Data Sheet
-      - CMinorIsotopeData_withCoastlineDistance.xlsx
+      - CMinorIsotopeData_withCoastlineDistance_v2.xlsx
+      - PRISM_ppt_CalcasieuPar_1940.csv
+      -  PRISM_ppt_CameronCo_1991.csv
+      -  PRISM_ppt_CameronPar_1936_2022.csv
+      -  PRISM_ppt_JeffersonPar_1936_1993.csv
+      -  PRISM_ppt_LafourchePar_1991.csv
+      -  PRISM_ppt_OrleansPar_1992.csv
   - Description of Code
-      - This script includes the code for all temporal and spatial analyses of stable isotopes: Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce Figure 2 in our publication.
+      - This script includes the code for all temporal, ecological and spatial analyses of stable isotopes: General Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce all tables and Figures 2, 3, and S1 in our publication.
