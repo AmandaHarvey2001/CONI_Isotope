@@ -1,9 +1,9 @@
 # Stable Isotope Ecology of _Chordeiles minor_
 
-This github repository stores the scripts and data used to run the statistical analyses associated with the manuscript entitled "Spatial and Temporal Patterns of Trophic Ecology in Common Nighthawks Nesting in the Gulf Coast." All analyses were ran in R version 4.4.2.
+This github repository stores the scripts and data used to run the statistical analyses associated with the manuscript entitled "Stable isotopes reflect long-term shifts in Common Nighthawk diet and habitat on the Gulf Coast" All analyses were ran in R version 4.4.2.
 
 ## Project Overview
-We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 94 feathers sampled between 1937–2022 to examine spatial and temporal trends in the trophic ecology and habitat use of _C. minor_ in the Gulf Coast by tracing primary producers, trophic level, and salinity content of food webs respectively. 
+We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feathers sampled between 1937–2022 to examine spatial and temporal trends in the trophic ecology and habitat use of _C. minor_ in the Gulf Coast by tracing primary producers, trophic level, and salinity content of food webs respectively. 
 
 ## Directory Map
 
@@ -12,17 +12,17 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 94 feath
 |    |    |- CMinorIsotopeData.xlsx <br />
 |    |    |- CMinorIsotopeData_withCoastlineDistance.xlsx <br />
 |    |    |- LocalitiesDataForMap_V2.xlsx <br />
-|    |    |- PrecipitationData
-|    |    |    |- PRISM_ppt_CalcasieuPar_1940.csv
-|    |    |    |- PRISM_ppt_CameronCo_1991.csv
-|    |    |    |- PRISM_ppt_CameronPar_1936_2022.csv
-|    |    |    |- PRISM_ppt_JeffersonPar_1936_1993.csv
-|    |    |    |- PRISM_ppt_LafourchePar_1991.csv
-|    |    |    |- PRISM_ppt_OrleansPar_1992.csv
+|    |    |- PrecipitationData <br />
+|    |    |    |- PRISM_ppt_CalcasieuPar_1940.csv <br />
+|    |    |    |- PRISM_ppt_CameronCo_1991.csv <br />
+|    |    |    |- PRISM_ppt_CameronPar_1936_2022.csv <br />
+|    |    |    |- PRISM_ppt_JeffersonPar_1936_1993.csv <br />
+|    |    |    |- PRISM_ppt_LafourchePar_1991.csv <br />
+|    |    |    |- PRISM_ppt_OrleansPar_1992.csv <br />
 |    |- <ins>Scripts</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v1.R <br />
 |    |    |- 2_CONIIsotope_SampleMap_v2.R <br />
-|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v3.R <br />
+|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v9.R <br />
 |    |- <ins>Shapefiles</ins> <br />
 |    |    |- GSHHS_i_L1.dbf <br />
 |    |    |- GSHHS_i_L1.prj <br />
