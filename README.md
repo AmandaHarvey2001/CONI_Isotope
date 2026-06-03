@@ -12,7 +12,7 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 |    |    |- CMinorIsotopeData.xlsx <br />
 |    |    |- CMinorIsotopeData_withCoastlineDistance.xlsx <br />
 |    |    |- LocalitiesDataForMap_V2.xlsx <br />
-|    |    |- </ins>PrecipitationData</ins> <br />
+|    |    |- <ins>PrecipitationData</ins> <br />
 |    |    |    |- PRISM_ppt_CalcasieuPar_1940.csv <br />
 |    |    |    |- PRISM_ppt_CameronCo_1991.csv <br />
 |    |    |    |- PRISM_ppt_CameronPar_1936_2022.csv <br />
