@@ -19,7 +19,7 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 |    |    |    |- PRISM_ppt_JeffersonPar_1936_1993.csv <br />
 |    |    |    |- PRISM_ppt_LafourchePar_1991.csv <br />
 |    |    |    |- PRISM_ppt_OrleansPar_1992.csv <br />
-|    |- <ins>Scripts</ins> <br />
+|    |- <ins>Script</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v4.R <br />
 |    |    |- 2_CONI_SamplingMapWithInset_v2.R <br />
 |    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v9.R <br />
