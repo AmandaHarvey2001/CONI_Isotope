@@ -9,9 +9,8 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 
 |- **<ins>CONI_Isotope</ins>** <br />
 |    |- <ins>Data</ins> <br />
-|    |    |- CMinorIsotopeData.xlsx <br />
-|    |    |- CMinorIsotopeData_withCoastlineDistance.xlsx <br />
-|    |    |- LocalitiesDataForMap_V2.xlsx <br />
+|    |    |- CMinorIsotopeData_v2.xlsx <br />
+|    |    |- CMinorIsotopeData_withCoastlineDistance_v4.xlsx <br />
 |    |    |- <ins>PrecipitationData</ins> <br />
 |    |    |    |- PRISM_ppt_CalcasieuPar_1940.csv <br />
 |    |    |    |- PRISM_ppt_CameronCo_1991.csv <br />
@@ -21,8 +20,8 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 |    |    |    |- PRISM_ppt_LafourchePar_1991.csv <br />
 |    |    |    |- PRISM_ppt_OrleansPar_1992.csv <br />
 |    |- <ins>Scripts</ins> <br />
-|    |    |- 1_CONIIsotope_DistanceFromCoast_v1.R <br />
-|    |    |- 2_CONIIsotope_SampleMap_v2.R <br />
+|    |    |- 1_CONIIsotope_DistanceFromCoast_v4.R <br />
+|    |    |- 2_CONI_SamplingMapWithInset_v2.R <br />
 |    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v9.R <br />
 |    |- <ins>Shapefiles</ins> <br />
 |    |    |- GSHHS_i_L1.dbf <br />
@@ -38,23 +37,23 @@ Within the CONI_Isotope Directory are 3 subdirectories containing their respecti
 Below, I will describe the function and neccessary data/shapefile components for each R code file in the Scripts subdirectory. Numbers at the beginning of script names represent the recommended order of execution. 
 
 ### Script Execution Order and Function
-1. 1_CONIIsotope_DistanceFromCoast_v1.R
+1. 1_CONIIsotope_DistanceFromCoast_v4.R
   - Required Shapefiles/ Data Sheet
       - GSHHS_i_L1.dbf
       - GSHHS_i_L1.prj
       - GSHHS_i_L1.shp
       - GSHHS_i_L1.shx
-      - CMinorIsotopeData.xlsx
+      - CMinorIsotopeData_v2.xlsx
   - Description of Code
-      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance_v2.xlsx).
+      - This script includes the code for calculating the distance of a sample's collection site coordinates to the coastline. Distances to the coastline (in meters) are then added to the existing dataframe as a new column exported for use in subsequent analyses (CMinorIsotopeData_withCoastlineDistance_v4.xlsx).
 2. 2_CONIIsotope_SampleMap_v2.R
   - Required Data Sheet
-      - LocalitiesDataForMap_V2.xlsx
+      - CMinorIsotopeData_withCoastlineDistance_v4.xlsx
   - Description of Code
-      - This script includes the code for the production of a sample map (Figure 1 in our publication). We use a cleaned excel sheet (LocalitiesDataForMap.xlsx) with standardized coordinates. For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
-3. 3_CONIIsotope_StatisticalTestsAndFigure_v3.R
+      - This script includes the code for the production of a sample map (Figure 1 in our publication). For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
+3. 3_CONIIsotope_StatisticalTestsAndFigure_v9.R
   - Required Data Sheet
-      - CMinorIsotopeData_withCoastlineDistance_v2.xlsx
+      - CMinorIsotopeData_withCoastlineDistance_v4.xlsx
       - PRISM_ppt_CalcasieuPar_1940.csv
       -  PRISM_ppt_CameronCo_1991.csv
       -  PRISM_ppt_CameronPar_1936_2022.csv
@@ -62,4 +61,4 @@ Below, I will describe the function and neccessary data/shapefile components for
       -  PRISM_ppt_LafourchePar_1991.csv
       -  PRISM_ppt_OrleansPar_1992.csv
   - Description of Code
-      - This script includes the code for all temporal, ecological and spatial analyses of stable isotopes: General Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce all tables and Figures 2, 3, and S1 in our publication.
+      - This script includes the code for all temporal, ecological and spatial analyses of stable isotopes: General Linear Regression Models, Akaike Information Scores, and Spearman's Rank Correlation Coefficient tests. Further, it includes the code written to produce all tables and Figures 2, 3, 4 and 5 in our publication.
