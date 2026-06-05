@@ -1,0 +1,23 @@
+PRISM Time Series Data
+Location:  Lat: 30.2293   Lon: -93.3579   Elev: 16ft
+Climate variable: ppt
+Spatial resolution: 4km
+Period: 1940-01 - 1940-12
+Dataset: AN91m
+PRISM day definition: 24 hours ending at 1200 UTC on the day shown
+Grid Cell Interpolation: Off
+Time series generated: 2025-Jun-02
+Details: http://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf
+Date,ppt (inches)
+1940-01,2.29
+1940-02,4.89
+1940-03,2.24
+1940-04,9.50
+1940-05,1.39
+1940-06,10.07
+1940-07,5.70
+1940-08,14.29
+1940-09,3.02
+1940-10,2.29
+1940-11,10.89
+1940-12,8.71

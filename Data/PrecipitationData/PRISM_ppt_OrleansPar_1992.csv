@@ -1,0 +1,23 @@
+PRISM Time Series Data
+Location:  Lat: 30.0688   Lon: -89.9311   Elev: 3ft
+Climate variable: ppt
+Spatial resolution: 4km
+Period: 1992-01 - 1992-12
+Dataset: AN91m
+PRISM day definition: 24 hours ending at 1200 UTC on the day shown
+Grid Cell Interpolation: Off
+Time series generated: 2025-Jun-02
+Details: http://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf
+Date,ppt (inches)
+1992-01,11.13
+1992-02,8.21
+1992-03,5.40
+1992-04,1.95
+1992-05,1.13
+1992-06,8.91
+1992-07,6.23
+1992-08,10.74
+1992-09,3.93
+1992-10,0.50
+1992-11,13.62
+1992-12,5.97
