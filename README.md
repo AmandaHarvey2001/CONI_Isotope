@@ -22,7 +22,7 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 |    |- <ins>Script</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v4.R <br />
 |    |    |- 2_CONI_SamplingMapWithInset_v2.R <br />
-|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v9.R <br />
+|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v10.R <br />
 |    |- <ins>Shapefiles</ins> <br />
 |    |    |- GSHHS_i_L1.dbf <br />
 |    |    |- GSHHS_i_L1.prj <br />
