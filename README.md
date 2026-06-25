@@ -22,7 +22,7 @@ We collected data on δ15N, δ13C, and δ34S stable isotope ratios from 118 feat
 |    |- <ins>Script</ins> <br />
 |    |    |- 1_CONIIsotope_DistanceFromCoast_v4.R <br />
 |    |    |- 2_CONI_SamplingMapWithInset_v2.R <br />
-|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v10.R <br />
+|    |    |- 3_CONIIsotope_StatisticalTestsAndFigure_v11.R <br />
 |    |- <ins>Shapefiles</ins> <br />
 |    |    |- GSHHS_i_L1.dbf <br />
 |    |    |- GSHHS_i_L1.prj <br />
@@ -51,7 +51,7 @@ Below, I will describe the function and neccessary data/shapefile components for
       - CMinorIsotopeData_withCoastlineDistance_v4.xlsx
   - Description of Code
       - This script includes the code for the production of a sample map (Figure 1 in our publication). For visualization purposes, individual nesting sites within a locality were standardized to minimize plotting noise.
-3. 3_CONIIsotope_StatisticalTestsAndFigure_v9.R
+3. 3_CONIIsotope_StatisticalTestsAndFigure_v11.R
   - Required Data Sheet
       - CMinorIsotopeData_withCoastlineDistance_v4.xlsx
       - PRISM_ppt_CalcasieuPar_1940.csv
